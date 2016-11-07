@@ -9,9 +9,9 @@ bool Contact::isValidToAdd() const
     -phone number
     */
 
-    bool hasNames = !(firstName.empty() || lastName.empty());
+    bool hasNames = !(firstName.empty());
 
-    if(hasNames && !phoneNumber.empty())
+    if(hasNames && !phoneNumber.empty() )
     {
         return true;
     }
@@ -27,7 +27,9 @@ bool Contact::isEmpty() const
         lastName.empty() &&
         phoneNumber.empty() && 
         address.empty() && 
-        email.empty())
+        email.empty() &&
+        city.empty()
+       )
     {
         return true;
     }

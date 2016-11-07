@@ -29,6 +29,8 @@ DummyDataSource::DummyDataSource()
         c.phoneNumber = temp;
         c.address = temp;
         c.email = temp;
+        c.city = temp;
+
     
         addContact(c);
         ss.str("");

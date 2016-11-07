@@ -16,6 +16,7 @@
 #include "qterrordialog.h"
 #include "contact.h"
 
+
 QtAddressBookGUI::QtAddressBookGUI(AddressBookController &controller, AddressBookModel &model,
     QWidget *parent, Qt::WindowFlags flags) : QMainWindow(parent, flags),
     appController(controller), dataSource(model)
@@ -182,12 +183,18 @@ void QtAddressBookGUI::deleteContact()
     bool firstRow  = list->currentRow() == 0;
     bool onlyRowLeft = list->count() == 1;
     
+
     if(!onlyRowLeft)
     {
         if(firstRow)
         {
             list->setCurrentRow(list->currentRow()+1,QItemSelectionModel::SelectCurrent);
+
+
+
+
         }
+
         else
         {
             //It is NOT the only row left AND it is not the first row.
