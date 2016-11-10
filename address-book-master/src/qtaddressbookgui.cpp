@@ -55,11 +55,16 @@ void QtAddressBookGUI::createWidgets()
      editContactButton->setStyleSheet("background-color: green; color:white");
     deleteContactButton = new QPushButton("Delete");
     deleteContactButton->setStyleSheet("background-color: blue; color:white");
+    searchContactButton = new QPushButton("Search");
+    searchContactField = new QLineEdit("");
 
     QHBoxLayout *buttonLayout = new QHBoxLayout();
     buttonLayout->addWidget(newContactButton);
     buttonLayout->addWidget(editContactButton);
     buttonLayout->addWidget(deleteContactButton);
+    buttonLayout->addWidget(searchContactField);
+    buttonLayout->addWidget(searchContactButton);
+
 
     QVBoxLayout *rightSideLayout = new QVBoxLayout();
     rightSideLayout->addWidget(detailView);
@@ -83,6 +88,9 @@ void QtAddressBookGUI::createWidgets()
 
     connect(editContactButton, SIGNAL(clicked()),
             this, SLOT(editContact()));
+
+    connect(searchContactButton, SIGNAL(clicked()),
+            this, SLOT(searchContact()));
 
     //tell the sub-widgets to refresh their data from
     //
@@ -217,4 +225,12 @@ void QtAddressBookGUI::deleteContact()
         return;
     }
 }
+    void QtAddressBookGUI::searchContact()
+    {
+        std::string nameTosearch = searchContactField ->text().toStdString();
+        Contact::ContactId idOfSearchedItem = list->searchList(nameTosearch);
+        detailView ->clear();
+        detailView ->displayContact(idOfSearchedItem);
+    }
+
 

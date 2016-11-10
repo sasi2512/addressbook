@@ -404,6 +404,9 @@ src/tmp/moc_qtaddressbookgui.cpp: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qdialog.h \
 		../address-book-master/src/qtcontactdetailview.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QGroupBox \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qgroupbox.h \
@@ -782,6 +785,9 @@ src/tmp/moc_qtcontactlist.cpp: C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QL
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qdialog.h \
 		../address-book-master/src/addressbookmodel.h \
 		../address-book-master/src/contact.h \
 		../address-book-master/src/errorinfo.h \
@@ -1160,6 +1166,9 @@ src/tmp/addressbookcontroller.o: ../address-book-master/src/addressbookcontrolle
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qdialog.h \
 		../address-book-master/src/qtcontactdetailview.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QGroupBox \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qgroupbox.h \
@@ -1707,6 +1716,9 @@ src/tmp/qtaddressbookgui.o: ../address-book-master/src/qtaddressbookgui.cpp C:/Q
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qdialog.h \
 		../address-book-master/src/qtcontactdetailview.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QGroupBox \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qgroupbox.h \
@@ -1724,12 +1736,9 @@ src/tmp/qtaddressbookgui.o: ../address-book-master/src/qtaddressbookgui.cpp C:/Q
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QLayout \
 		../address-book-master/src/qtaddcontactdialog.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QDialog \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qdialog.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QWidget \
 		../address-book-master/src/qteditcontactdialog.h \
-		../address-book-master/src/qterrordialog.h \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMessageBox \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmessagebox.h
+		../address-book-master/src/qterrordialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o src\tmp\qtaddressbookgui.o ..\address-book-master\src\qtaddressbookgui.cpp
 
 src/tmp/qtcontactdetailview.o: ../address-book-master/src/qtcontactdetailview.cpp ../address-book-master/src/qtcontactdetailview.h \
@@ -2099,7 +2108,10 @@ src/tmp/qtcontactlist.o: ../address-book-master/src/qtcontactlist.cpp C:/Qt/Qt5.
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtabwidget.h \
-		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qrubberband.h
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o src\tmp\qtcontactlist.o ..\address-book-master\src\qtcontactlist.cpp
 
 src/tmp/qteditcontactdialog.o: ../address-book-master/src/qteditcontactdialog.cpp ../address-book-master/src/contact.h \
