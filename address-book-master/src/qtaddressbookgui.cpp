@@ -16,7 +16,6 @@
 #include "qterrordialog.h"
 #include "contact.h"
 
-
 QtAddressBookGUI::QtAddressBookGUI(AddressBookController &controller, AddressBookModel &model,
     QWidget *parent, Qt::WindowFlags flags) : QMainWindow(parent, flags),
     appController(controller), dataSource(model)
@@ -42,9 +41,20 @@ void QtAddressBookGUI::createWidgets()
     list = new QtContactList(dataSource);
     list->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
 
-    newContactButton = new QPushButton("New Contact");
+
+
+    newContactButton = new QPushButton(QIcon("C:/Users/student/Desktop/ARW02UP.ico"),"New Contact");
+
+    newContactButton->setToolTip("To enter new contact click here");
+    newContactButton->setStyleSheet("background-color: red; color:white");
+
+    newContactButton->setGeometry(20,20,50,40);
+    newContactButton->show();
+
     editContactButton = new QPushButton("Edit");
+     editContactButton->setStyleSheet("background-color: green; color:white");
     deleteContactButton = new QPushButton("Delete");
+    deleteContactButton->setStyleSheet("background-color: blue; color:white");
 
     QHBoxLayout *buttonLayout = new QHBoxLayout();
     buttonLayout->addWidget(newContactButton);
@@ -183,18 +193,12 @@ void QtAddressBookGUI::deleteContact()
     bool firstRow  = list->currentRow() == 0;
     bool onlyRowLeft = list->count() == 1;
     
-
     if(!onlyRowLeft)
     {
         if(firstRow)
         {
             list->setCurrentRow(list->currentRow()+1,QItemSelectionModel::SelectCurrent);
-
-
-
-
         }
-
         else
         {
             //It is NOT the only row left AND it is not the first row.

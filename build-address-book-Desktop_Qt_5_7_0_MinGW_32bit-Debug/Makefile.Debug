@@ -1963,6 +1963,10 @@ src/tmp/qtcontactform.o: ../address-book-master/src/qtcontactform.cpp C:/Qt/Qt5.
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtextformat.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qpen.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QTextEdit \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qtextedit.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtGui/qtextdocument.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QFormLayout \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/qformlayout.h \
 		C:/Qt/Qt5.7.0/5.7/mingw53_32/include/QtWidgets/QLayout \
